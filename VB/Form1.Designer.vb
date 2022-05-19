@@ -25,46 +25,48 @@ Namespace Q135913
 		''' the contents of this method with the code editor.
 		''' </summary>
 		Private Sub InitializeComponent()
-			Me.pivotGridControl1 = New DevExpress.XtraPivotGrid.PivotGridControl()
-			Me.pivotGridControl2 = New DevExpress.XtraPivotGrid.PivotGridControl()
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
-			CType(Me.pivotGridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
-			Me.SuspendLayout()
-			' 
-			' pivotGridControl1
-			' 
-			Me.pivotGridControl1.Cursor = System.Windows.Forms.Cursors.Default
-			Me.pivotGridControl1.Location = New System.Drawing.Point(13, 13)
-			Me.pivotGridControl1.Name = "pivotGridControl1"
-			Me.pivotGridControl1.Size = New System.Drawing.Size(400, 200)
-			Me.pivotGridControl1.TabIndex = 0
-			' 
-			' pivotGridControl2
-			' 
-			Me.pivotGridControl2.Cursor = System.Windows.Forms.Cursors.Default
-			Me.pivotGridControl2.Location = New System.Drawing.Point(13, 219)
-			Me.pivotGridControl2.Name = "pivotGridControl2"
-			Me.pivotGridControl2.Size = New System.Drawing.Size(400, 200)
-			Me.pivotGridControl2.TabIndex = 1
-			' 
-			' Form1
-			' 
-			Me.AutoScaleDimensions = New System.Drawing.SizeF(6F, 13F)
-			Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-			Me.ClientSize = New System.Drawing.Size(427, 432)
-			Me.Controls.Add(Me.pivotGridControl2)
-			Me.Controls.Add(Me.pivotGridControl1)
-			Me.Name = "Form1"
-			Me.Text = "Form1"
-			CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
-			CType(Me.pivotGridControl2, System.ComponentModel.ISupportInitialize).EndInit()
-			Me.ResumeLayout(False)
+            Me.pivotGridControl1 = New DevExpress.XtraPivotGrid.PivotGridControl()
+            Me.pivotGridControl2 = New DevExpress.XtraPivotGrid.PivotGridControl()
+            CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType(Me.pivotGridControl2, System.ComponentModel.ISupportInitialize).BeginInit()
+            Me.SuspendLayout()
+            '
+            'pivotGridControl1
+            '
+            Me.pivotGridControl1.Cursor = System.Windows.Forms.Cursors.Default
+            Me.pivotGridControl1.Location = New System.Drawing.Point(13, 13)
+            Me.pivotGridControl1.Name = "pivotGridControl1"
+            Me.pivotGridControl1.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized
+            Me.pivotGridControl1.Size = New System.Drawing.Size(400, 200)
+            Me.pivotGridControl1.TabIndex = 0
+            '
+            'pivotGridControl2
+            '
+            Me.pivotGridControl2.Cursor = System.Windows.Forms.Cursors.Default
+            Me.pivotGridControl2.Location = New System.Drawing.Point(13, 219)
+            Me.pivotGridControl2.Name = "pivotGridControl2"
+            Me.pivotGridControl2.OptionsData.DataProcessingEngine = DevExpress.XtraPivotGrid.PivotDataProcessingEngine.Optimized
+            Me.pivotGridControl2.Size = New System.Drawing.Size(400, 200)
+            Me.pivotGridControl2.TabIndex = 1
+            '
+            'Form1
+            '
+            Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+            Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+            Me.ClientSize = New System.Drawing.Size(427, 432)
+            Me.Controls.Add(Me.pivotGridControl2)
+            Me.Controls.Add(Me.pivotGridControl1)
+            Me.Name = "Form1"
+            Me.Text = "Form1"
+            CType(Me.pivotGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            CType(Me.pivotGridControl2, System.ComponentModel.ISupportInitialize).EndInit()
+            Me.ResumeLayout(False)
 
-		End Sub
+        End Sub
 
-		#End Region
+#End Region
 
-		Private pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
+        Private pivotGridControl1 As DevExpress.XtraPivotGrid.PivotGridControl
 		Private pivotGridControl2 As DevExpress.XtraPivotGrid.PivotGridControl
 	End Class
 End Namespace
